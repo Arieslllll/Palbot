@@ -59,7 +59,7 @@ async def on_raw_reaction_add(payload):
         #対象のスタンプであればピン止めし一言
         if payload.emoji.name != EMOJI_PIN:
             print("other2")
-            await channel.send("<:Cheonggyecheon:1070720806264504361>")
+            #await channel.send("<:Cheonggyecheon:1070720806264504361>")
             return
     
         await message.pin()
@@ -80,7 +80,7 @@ async def on_raw_reaction_remove(payload):
     
         #対象のスタンプであればピン止めし一言
         if payload.emoji.name != EMOJI_PIN:
-            await channel.send("<:Cheonggyecheon:1070720806264504361>")
+            #await channel.send("<:Cheonggyecheon:1070720806264504361>")
             print("other4")
             return
     
