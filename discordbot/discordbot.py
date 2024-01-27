@@ -6,8 +6,11 @@ import subprocess
 import functools
 import typing
 import os
+import settings
 from typing import Any
 from discord.ext import commands
+
+GLOBAL = settings
 
 ID_CHANNEL_TALK = 1044528729747095582
 ID_CHANNEL_ROOM = 894574539697176646
@@ -24,9 +27,6 @@ intents.message_content=True
 
 #botコマンドの設定
 bot = commands.Bot(command_prefix = '$' , intents = intents)
-
-#botのアクセストークン
-TOKEN = "MTA4NDcwMTAzNTA4NTQzODk5Ng.GQIGWW.-t_uynm8OftYNMR2Kj01cgGNYOoOg6T2OCZc74"
 
 #接続に必要なオブジェクト生成
 client = discord.Client(intents = intents)
@@ -107,4 +107,4 @@ async def on_message(message):
         return
 #Botの起動とDiscordサーバーへの接続
 
-client.run(TOKEN)
+client.run(GLOBAL.TOKEN)

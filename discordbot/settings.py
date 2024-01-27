@@ -1,0 +1,2 @@
+#botのアクセストークン
+TOKEN = "your token"
