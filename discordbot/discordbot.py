@@ -26,7 +26,7 @@ intents.message_content=True
 bot = commands.Bot(command_prefix = '$' , intents = intents)
 
 #botのアクセストークン
-TOKEN = "MTA4NDcwMTAzNTA4NTQzODk5Ng.GwG_RS.9Dl5K3UDryCFK3sP6CTI8zlZtn6MRTvv4Ay5NU"
+TOKEN = "MTA4NDcwMTAzNTA4NTQzODk5Ng.GQIGWW.-t_uynm8OftYNMR2Kj01cgGNYOoOg6T2OCZc74"
 
 #接続に必要なオブジェクト生成
 client = discord.Client(intents = intents)
