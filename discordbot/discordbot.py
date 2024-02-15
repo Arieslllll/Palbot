@@ -97,14 +97,22 @@ async def on_message(message):
     if message.content == "おはよ":
         await message.channel.send("おはんよ")
 #startと発言したらサーバーを起動する
-    if message.content == "start":
-        await message.channel.send("サーバーを起動しました！")
+    if message.content == "Palstart":
+        await message.channel.send("パルワールドのサーバーを起動しました！")
         os.system('start.bat')
         return
-    if message.content == "close":
-        await message.channel.send("サーバーを閉じました！")
+    if message.content == "Palclose":
+        await message.channel.send("パルワールドのサーバーを閉じました！")
         os.system('close.bat')
         return
+    if message.content == "Arkstart":
+        await message.channel.send("Arkのサーバーを起動しました！")
+        os.system('start.bat')
+        return
+    if message.content == "Arkclose":
+        await message.channel.send("Arkのサーバーを閉じました！")
+        os.system('close.bat')
+        return
+    
 #Botの起動とDiscordサーバーへの接続
-
 client.run(GLOBAL.TOKEN)
