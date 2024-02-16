@@ -101,21 +101,25 @@ async def on_message(message):
         await message.channel.send("パルワールドのサーバーを起動しました！")
         os.chdir('./Palworld')
         os.system('start.bat')
+        os.chdir('..')
         return
     if message.content == "Palclose":
         await message.channel.send("パルワールドのサーバーを閉じました！")
         os.chdir('./Palworld')
         os.system('close.bat')
+        os.chdir('..')
         return
     if message.content == "Arkstart":
         await message.channel.send("Arkのサーバーを起動しました！")
         os.chdir('./Ark')
         os.system('start.bat')
+        os.chdir('..')
         return
     if message.content == "Arkclose":
         await message.channel.send("Arkのサーバーを閉じました！")
         os.chdir('./Ark')
         os.system('close.bat')
+        os.chdir('..')
         return
     
 #Botの起動とDiscordサーバーへの接続
